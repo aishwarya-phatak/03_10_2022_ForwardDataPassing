@@ -50,6 +50,13 @@
                                     <action selector="btnClickToNavigateToSVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eBe-OX-F9i"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbf-P4-FKR">
+                                <rect key="frame" x="77" y="236" width="246" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -57,11 +64,12 @@
                     <navigationItem key="navigationItem" id="vKg-eR-3sc"/>
                     <connections>
                         <outlet property="dataTextFieldOnFirstViewController" destination="EGI-n2-RL9" id="2t4-pY-dh2"/>
+                        <outlet property="nameLabelOnFirstViewController" destination="Gbf-P4-FKR" id="GTt-aC-Pza"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="65" y="-238"/>
+            <point key="canvasLocation" x="64.615384615384613" y="-238.15165876777249"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="exW-9p-ha9">
@@ -85,18 +93,28 @@
                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="btnClickToNavigateToFirstViewCOntroller:" destination="1CI-bM-gdO" eventType="touchUpInside" id="Emr-eF-Ffa"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gpm-8Q-vkd">
+                                <rect key="frame" x="76" y="237" width="239" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8ZJ-6c-Pyo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="dataLabelOnSecondViewController" destination="DSz-Mh-rXW" id="zQ5-id-QgN"/>
+                        <outlet property="nametextFieldOnSecondViewController" destination="gpm-8Q-vkd" id="Tsi-ny-xLa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VZR-O3-UkR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="838" y="-238"/>
+            <point key="canvasLocation" x="836.92307692307691" y="-238.15165876777249"/>
         </scene>
     </scenes>
     <resources>
